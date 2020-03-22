@@ -1,14 +1,18 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-</div>
-<div class="container">
-  <div class="jumbotron">
-    <h1>Welcome</h1>
-    <h2>Angular & Bootstrap</h2>
+<header class="header p-2">
+  <div class="container">
+    <div class="row">
+      <div class="col-6 brand-name my-auto">
+        <span class="font-weight-bold">SplitEasy</span>
+      </div>
+      <div class="col-6 text-center">
+          <button type="button" class="btn btn-light">Login</button>
+          or
+        <button type="button" class="btn btn-primary">Sign Up</button>
+      </div>
+    </div>
   </div>
-</div>
-
+</header>
+<app-login-signup></app-login-signup>
 <router-outlet></router-outlet>
+
+
