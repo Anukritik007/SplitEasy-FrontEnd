@@ -1,22 +1,31 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { ViewsModule } from './views/views.module';
 import { ComponentsModule } from './components/components.module';
+import { AppRoutingModule } from './app-routing.module';
+import { ReactiveFormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import {LoginSignupComponent} from './views/login-signup/login-signup.component';
+import { ContainerComponent } from './container/container.component';
+// TODO: add views as a module
+// import {ViewsModule} from './views/views.module';
+// import {RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
-    AppComponent
+    LoginSignupComponent,
+    ContainerComponent
   ],
   imports: [
+    // TODO: add views as a module
+    // ViewsModule,
+    // RouterModule,
     BrowserModule,
-    AppRoutingModule,
-    ViewsModule,
-    ComponentsModule
-  ],
+    ComponentsModule,
+    CommonModule ,
+    ReactiveFormsModule,
+    AppRoutingModule
+    ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [ContainerComponent]
 })
 export class AppModule { }

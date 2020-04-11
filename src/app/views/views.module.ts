@@ -1,13 +1,16 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { LoginSignupComponent } from './login-signup/login-signup.component';
-import { ReactiveFormsModule } from '@angular/forms';
+// TODO: add views as a module
 
-@NgModule({
-  declarations: [LoginSignupComponent],
-  imports: [
-    CommonModule , ReactiveFormsModule
-  ],
-  exports: [LoginSignupComponent]
-})
-export class ViewsModule { }
+// import { NgModule } from '@angular/core';
+// import { CommonModule } from '@angular/common';
+// import { LoginSignupComponent } from './login-signup/login-signup.component';
+// import { ReactiveFormsModule } from '@angular/forms';
+// import {ViewsRoutingModule} from './views-routing.module';
+
+// @NgModule({
+//   declarations: [LoginSignupComponent],
+//   imports: [
+//     CommonModule , ReactiveFormsModule,ViewsRoutingModule
+//   ],
+//   exports: [LoginSignupComponent]
+// })
+// export class ViewsModule { }
