@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="row">
+        <div class="col-4 side-bar">
+            <div class="card">
+                <div [ngClass]="{'card-header':true,'active':(selected==='dashboard')}" (click)="onDashboardSelection()">
+                  Dashboard
+                </div>
+                <div [ngClass]="{'card-header':true,'active':(selected==='activities')}" (click)="onActivitiesSelection()">
+                    Recent Activities
+                </div>
+                <div [ngClass]="{'card-header':true,'active':(selected==='expenses')}" (click)="onExpensesSelection()">
+                    All Expenses
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Groups</h5>
+                  <p class="card-text">Fraaannds</p>
+                  <p class="card-text">ISN</p>
+
+                  <h5 class="card-title">Friends</h5>
+                  <p class="card-text">Manisha Kashyap</p>
+                  <p class="card-text">Mayank Agrawal</p>
+
+                </div>
+              </div>
+        </div>
+        
+        <div class="col-6 col-offset-2 dashboard">
+            dashboard component
+            <router-outlet></router-outlet>
+        </div>
+        
+    </div>
+</div>

@@ -14,9 +14,8 @@ export class SignupComponent implements OnInit {
 
   ngOnInit() {
     this.signupForm = new FormGroup({
-      //TODO:fix regex issue
       name:new FormControl(),
-      email: new FormControl('', [Validators.required, Validators.pattern('[\w\.]+@[\w]+\.[a-zA-Z]+')]),
+      email: new FormControl('', [Validators.required, Validators.pattern(/[\w\.]+@[\w]+\.[a-zA-Z]+/)]),
       password: new FormControl('', [Validators.required, Validators.minLength(8)]),
       phoneNumber:new FormControl('', [Validators.required, Validators.minLength(10)]), //TODO:make exact 10 digit
       currency:new FormControl()

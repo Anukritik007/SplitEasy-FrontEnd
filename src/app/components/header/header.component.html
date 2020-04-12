@@ -1,0 +1,17 @@
+<header class="header p-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 brand-name my-auto" (click)="onHeaderClick()">
+          <span class="font-weight-bold">SplitEasy</span>
+        </div>
+
+        <!-- TODO : show authenticated user if authenticated -->
+        <div class="col-6 text-center">
+            <button type="button" class="btn btn-light" (click)="onLoginClick()">Log in</button>
+            or
+          <button type="button" class="btn btn-primary" (click)="onSignupClick()">Sign up</button>
+        </div>
+
+      </div>
+    </div>
+  </header>

@@ -7,6 +7,7 @@ import { CommonModule } from '@angular/common';
 import {LoginComponent} from './views/auth/login/login.component';
 import {SignupComponent} from './views/auth/signup/signup.component';
 import {WelcomePageComponent} from './views/welcome-page/welcome-page.component';
+import {LandingPageComponent} from './views/landing-page/landing-page.component';
 import { ContainerComponent } from './container/container.component';
 // TODO: add views as a module
 // import {ViewsModule} from './views/views.module';
@@ -17,6 +18,7 @@ import { ContainerComponent } from './container/container.component';
     LoginComponent,
     SignupComponent,
     WelcomePageComponent,
+    LandingPageComponent,
     ContainerComponent
   ],
   imports: [
