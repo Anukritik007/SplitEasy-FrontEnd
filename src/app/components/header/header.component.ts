@@ -8,9 +8,11 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
 
+  public userAuthenticated=false;
   constructor(private router:Router) { }
 
   ngOnInit() {
+    console.log('HeaderComponent : user authenticated:',this.userAuthenticated);
   }
 
   public onHeaderClick(){

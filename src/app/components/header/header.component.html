@@ -7,9 +7,11 @@
 
         <!-- TODO : show authenticated user if authenticated -->
         <div class="col-6 text-center">
-            <button type="button" class="btn btn-light" (click)="onLoginClick()">Log in</button>
-            or
-          <button type="button" class="btn btn-primary" (click)="onSignupClick()">Sign up</button>
+            <ng-container *ngIf="!userAuthenticated" class="login-signup-options">
+                <button type="button" class="btn btn-light" (click)="onLoginClick()">Log in</button>
+                or
+                <button type="button" class="btn btn-primary" (click)="onSignupClick()">Sign up</button>
+            </ng-container>
         </div>
 
       </div>

@@ -9,6 +9,7 @@ import {SignupComponent} from './views/auth/signup/signup.component';
 import {WelcomePageComponent} from './views/welcome-page/welcome-page.component';
 import {LandingPageComponent} from './views/landing-page/landing-page.component';
 import { ContainerComponent } from './container/container.component';
+import { AuthService } from './auth.service';
 // TODO: add views as a module
 // import {ViewsModule} from './views/views.module';
 // import {RouterModule } from '@angular/router';
@@ -31,7 +32,7 @@ import { ContainerComponent } from './container/container.component';
     ReactiveFormsModule,
     AppRoutingModule
     ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [ContainerComponent]
 })
 export class AppModule { }
