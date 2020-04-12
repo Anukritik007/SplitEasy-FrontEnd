@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl , Validators } from '@angular/forms';
 
 @Component({
-  selector: 'app-login-signup',
-  templateUrl: './login-signup.component.html',
-  styleUrls: ['./login-signup.component.css']
+  selector: 'app-login',
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.css']
 })
-export class LoginSignupComponent implements OnInit {
+export class LoginComponent implements OnInit {
 
   public loginForm: FormGroup;
   constructor() { }
@@ -20,7 +20,7 @@ export class LoginSignupComponent implements OnInit {
   }
 
   public onSubmit(form: FormGroup) {
-    console.log('LoginSignupComponent:Entering onSubmit');
+    console.log('LoginComponent:Entering onSubmit');
     const userEmail = form.value.email;
     const userPassword = form.value.password;
     console.log('User with id :', userEmail, 'is trying to login with password:', userPassword);

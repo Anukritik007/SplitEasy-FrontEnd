@@ -4,7 +4,8 @@ import { ComponentsModule } from './components/components.module';
 import { AppRoutingModule } from './app-routing.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import {LoginSignupComponent} from './views/login-signup/login-signup.component';
+import {LoginComponent} from './views/auth/login/login.component';
+import {SignupComponent} from './views/auth/signup/signup.component';
 import {WelcomePageComponent} from './views/welcome-page/welcome-page.component';
 import { ContainerComponent } from './container/container.component';
 // TODO: add views as a module
@@ -13,7 +14,8 @@ import { ContainerComponent } from './container/container.component';
 
 @NgModule({
   declarations: [
-    LoginSignupComponent,
+    LoginComponent,
+    SignupComponent,
     WelcomePageComponent,
     ContainerComponent
   ],

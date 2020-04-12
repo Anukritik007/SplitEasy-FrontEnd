@@ -1,18 +1,19 @@
 <header class="header p-2">
     <div class="container">
       <div class="row">
-        <div class="col-6 brand-name my-auto">
+        <div class="col-6 brand-name my-auto" (click)="onHeaderClick()">
           <span class="font-weight-bold">SplitEasy</span>
         </div>
 
         <!-- TODO : show authenticated user if authenticated -->
         <div class="col-6 text-center">
-            <button type="button" class="btn btn-light">Login</button>
+            <button type="button" class="btn btn-light" routerLink="/login">Login</button>
             or
-          <button type="button" class="btn btn-primary">Sign Up</button>
+          <button type="button" class="btn btn-primary" routerLink="/signup">Sign Up</button>
         </div>
 
       </div>
     </div>
   </header>
+
 <router-outlet></router-outlet>

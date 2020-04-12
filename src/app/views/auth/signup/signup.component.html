@@ -1,0 +1,40 @@
+<div class="signup-container">
+    <div class="row p-5">
+        <div class="col-4">
+        </div>
+        <div class="col-4 col-offset-4">
+            <div class="welcome-msg">WELCOME TO SPLITEASY , SIGNUP TO CONTINUE</div>
+            <form class="pt-2" [formGroup]="signupForm" (ngSubmit)="onSubmit(signupForm)">
+                <div class="form-group">
+                    <input class="form-control" formControlName="name" placeholder="Your name">                      
+                </div>
+                <div class="form-group">
+                    <input class="form-control" formControlName="email" placeholder="Your email">
+                    <div *ngIf="signupForm.controls.email.hasError('pattern')" class="text-danger pt-2">
+                        Invalid email address
+                    </div>                        
+                </div>
+                <div class="form-group">
+                    <input class="form-control" formControlName="password" type="password" placeholder="Create your password">
+                </div>
+
+                <!-- TODO: add country code input -->
+                <div class="form-group">
+                    <input class="form-control" formControlName="phoneNumber" type="number" placeholder="mobile">
+                    <div *ngIf="signupForm.controls.phoneNumber.hasError('pattern')" class="text-danger pt-2">
+                        Invalid phone number
+                    </div> 
+                </div>
+
+                <div class="form-group">
+                <select class="form-control" formControlName="currency" placeholder="Currency"> 
+                    <option>IN Rupee</option>
+                    <option>Dollar $</option>
+                  </select>
+                </div>
+
+                <button class="btn btn-primary" type="submit" [disabled]="signupForm.invalid">Sign Up</button>
+            </form>
+        </div>
+    </div>
+</div>

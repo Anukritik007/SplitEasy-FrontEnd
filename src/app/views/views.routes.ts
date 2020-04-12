@@ -1,7 +1,7 @@
 // TODO: add views as a module
 
 // import { Routes } from '@angular/router';
-// import { LoginSignupComponent } from './login-signup/login-signup.component';
+// import { LoginComponent } from './login/login.component';
 
 // export class ViewsRoutes{
 
@@ -10,7 +10,7 @@
 //         return [
 //             {
 //                 path:'',
-//                 component:LoginSignupComponent
+//                 component:LoginComponent
 //             }
 //         ];
 //     }

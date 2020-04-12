@@ -1,7 +1,8 @@
 import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
-import { LoginSignupComponent } from './views/login-signup/login-signup.component';
+import { LoginComponent } from './views/auth/login/login.component';
 import { WelcomePageComponent } from './views/welcome-page/welcome-page.component';
+import {SignupComponent} from './views/auth/signup/signup.component';
 
 
 const appRoutes:Routes =[
@@ -11,7 +12,15 @@ const appRoutes:Routes =[
                 },
                 {
                     path:'login',
-                    component:LoginSignupComponent
+                    component:LoginComponent
+                },
+                {
+                    path:'signup',
+                    component:SignupComponent
+                },
+                {
+                    path:'**',
+                    redirectTo:''
                 }
             ];
 
